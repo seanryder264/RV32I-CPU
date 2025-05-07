@@ -1,6 +1,6 @@
 module se (
     input   logic [11:0] in,
-    input   logic                  src,
+    input   logic        src,
     output  logic [32:0] out
 );
 

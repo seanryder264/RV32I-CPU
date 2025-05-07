@@ -1,11 +1,11 @@
 module alu #(
     DATA_WIDTH = 32
 )(
-    logic input     [DATA_WIDTH-1:0]    op1,
-    logic input     [DATA_WIDTH-1:0]    op2,
-    logic input                         ctrl,
-    logic output    [DATA_WIDTH-1:0]    out,
-    logic output                        eq,
+    input logic     [DATA_WIDTH-1:0]    op1,
+    input logic     [DATA_WIDTH-1:0]    op2,
+    input logic                         ctrl,
+    output logic    [DATA_WIDTH-1:0]    out,
+    output logic                        eq
 );
     always_comb begin
         case (ctrl)
